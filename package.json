@@ -1,0 +1,31 @@
+{
+  "name": "rethink-crossref",
+  "version": "0.1.0",
+  "description": "Import Crossref data to RethinkDB",
+  "author": "Alf Eaton <eaton.alf@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "import": "node $NODE_DEBUG_OPTION import.js"
+  },
+  "dependencies": {
+    "rest-collection-stream": "^0.0.1",
+    "rethinkdbdash": "^2.3.28"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "standard": "^10.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "script"
+    }
+  }
+}
